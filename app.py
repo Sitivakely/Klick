@@ -905,6 +905,7 @@ def main_app():
     df_tasks = fetch_data('tasks')
     df_sessions = fetch_data('sessions')
     df_users = fetch_data('users')
+    df_logins = fetch_data('logins')
 
     # Affichage des Onglets
     tab1, tab2, tab3 = st.tabs(["📋 Tâches", "📈 Reporting", "👥 Administration"])
@@ -929,3 +930,4 @@ def main_app():
 # Lancement de l'application
 if __name__ == "__main__":
     main_app()
+
