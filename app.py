@@ -38,7 +38,7 @@ def load_high_tech_css():
             /* Variables de couleur */
             :root {
                 --main-bg: #0d1117;
-                --neon-blue: #00ffff;
+                --orange: #f09c20;
                 --neon-green: #39ff14;
                 --text-color: #c9d1d9;
                 --card-bg: #161b22;
@@ -930,4 +930,5 @@ def main_app():
 # Lancement de l'application
 if __name__ == "__main__":
     main_app()
+
 
