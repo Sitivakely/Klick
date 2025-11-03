@@ -876,7 +876,7 @@ def main_app():
     # Chargement du design
     load_high_tech_css()
     
-    st.markdown('<div class="title-app">ANDIHOO TIME TRACKER - HIGH-TECH INTERFACE</div>', unsafe_allow_html=True)
+    st.markdown('<div class="title-app">ANDIHOO TIME TRACKER</div>', unsafe_allow_html=True)
     
     # Vérification et Affichage du formulaire de connexion si non connecté
     check_login()
@@ -930,6 +930,7 @@ def main_app():
 # Lancement de l'application
 if __name__ == "__main__":
     main_app()
+
 
 
 
