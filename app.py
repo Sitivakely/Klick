@@ -336,7 +336,7 @@ def login_form():
     
     with st.form("login_form"):
         email = st.text_input("Adresse Gmail", placeholder="votre.email@gmail.com").strip().lower()
-        submitted = st.form_submit_button("Accéder au Système")
+        submitted = st.form_submit_button("Se connecter")
 
         if submitted:
             if not email:
@@ -930,5 +930,6 @@ def main_app():
 # Lancement de l'application
 if __name__ == "__main__":
     main_app()
+
 
 
