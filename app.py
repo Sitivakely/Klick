@@ -22,8 +22,7 @@ def ensure_service_account_file():
     if "gcp_service_account" in st.secrets:
         try:
             creds = dict(st.secrets["gcp_service_account"])
-            if isinstance(creds.get("private_key"), str):
-                creds["private_key"] = creds["private_key"].replace("\\n", "\n")
+            # ⚠️ On ne modifie pas la clé ici, car elle est déjà bien formatée
             with open("service_account.json", "w") as f:
                 json.dump(creds, f)
             return True
@@ -33,7 +32,7 @@ def ensure_service_account_file():
 
     st.error("ERREUR : Aucun secret [gcp_service_account] trouvé dans Streamlit.")
     return False
-
+    
 ensure_service_account_file()
 
 
@@ -953,3 +952,4 @@ def main_app():
 # Lancement de l'application
 if __name__ == "__main__":
     main_app()
+
